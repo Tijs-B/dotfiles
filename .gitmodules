@@ -20,3 +20,6 @@
 [submodule "zsh/plugins/zsh-autosuggestions"]
 	path = zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "vim/pack/vendor/start/tmuxline.vim"]
+	path = vim/pack/vendor/start/tmuxline.vim
+	url = https://github.com/edkolev/tmuxline.vim.git
