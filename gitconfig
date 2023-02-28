@@ -1,0 +1,21 @@
+[alias]
+    st = status -sb
+    br = branch -vv
+    aa = add --all :/
+    ci = commit -v
+    ca = commit --amend -v
+    co = checkout
+    dh = diff HEAD~
+    ff = merge --ff-only
+    fa = fetch --all
+    pullrb = pull --rebase
+
+[color]
+    ui = auto
+
+[core]
+    excludesFile = ~/.gitignore_global
+
+[include]
+    path = ~/.gitconfig_local
+
