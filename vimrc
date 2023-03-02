@@ -104,6 +104,9 @@ set mouse+=a
 " Don't show the mode
 set noshowmode
 
+" Show line numbers
+set number
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -124,6 +127,11 @@ set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
+" Set color scheme
+set termguicolors
+set background=dark
+colorscheme solarized8_flat
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -369,7 +377,7 @@ let g:lightline = {
             \ 'component': {
             \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
             \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-            \   'fugitive': '%{exists("*FugitiveHead")?FugitiveHead():""}'
+            \   'fugitive': '%{exists("*FugitiveHead")?"┣ " . FugitiveHead():""}'
             \ },
             \ 'component_visible_condition': {
             \   'readonly': '(&filetype!="help"&& &readonly)',
@@ -378,4 +386,8 @@ let g:lightline = {
             \ },
             \ }
 
+" Airline
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+let g:airline_powerline_fonts = 1
 
