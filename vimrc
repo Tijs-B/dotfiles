@@ -369,30 +369,11 @@ endfunction
 " => Plugin configuration
 """"""""""""""""""""""""""""""""
 
-" Lightline
-let g:lightline = {
-            \ 'colorscheme': 'solarized',
-            \ 'active': {
-            \   'left': [ ['mode', 'paste'],
-            \             ['fugitive', 'readonly', 'filename', 'modified' ] ],
-            \   'right': [ ['lineinfo'], ['percent'] ],
-            \ },
-            \ 'component': {
-            \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
-            \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-            \   'fugitive': '%{exists("*FugitiveHead")?"┣ " . FugitiveHead():""}'
-            \ },
-            \ 'component_visible_condition': {
-            \   'readonly': '(&filetype!="help"&& &readonly)',
-            \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-            \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
-            \ },
-            \ }
-
 " Airline
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " NERDTree
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
