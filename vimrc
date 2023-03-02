@@ -400,7 +400,7 @@ map <leader>n :NERDTreeToggle<cr>
 map <leader>f :NERDTreeFind<cr>
 
 " argwrap
-nnoremap <leader>w :ArgWrap<cr>
+nnoremap <leader>a :ArgWrap<cr>
 
 
 
