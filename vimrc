@@ -144,6 +144,14 @@ set nobackup
 set nowb
 set noswapfile
 
+" Set up persistent undo
+set undofile
+
+if !isdirectory(expand("$HOME/.vim/undo"))
+  call mkdir(expand("$HOME/.vim/undo"), "p")
+endif
+set undodir=$HOME/.vim/undo
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -179,10 +187,6 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-map <C-space> ?
-
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
