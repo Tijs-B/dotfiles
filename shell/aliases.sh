@@ -21,7 +21,8 @@ alias dcp='docker compose pull'
 
 # Common commands
 alias gs='git status'
-alias gc='git commit'
+alias gc='git commit -v'
 alias gd='git diff'
+alias ga='git add --all'
 alias v='vim'
 
