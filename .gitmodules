@@ -38,3 +38,9 @@
 [submodule "vim/pack/themes/opt/vim-solarized8"]
 	path = vim/pack/themes/opt/vim-solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
+[submodule "vim/pack/vendor/start/rust.vim"]
+	path = vim/pack/vendor/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
+[submodule "vim/pack/vendor/start/vim-argwrap"]
+	path = vim/pack/vendor/start/vim-argwrap
+	url = https://github.com/FooSoft/vim-argwrap

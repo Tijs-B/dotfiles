@@ -28,6 +28,9 @@ map <F5> :call CompileRun()<CR>
 imap <F5> <Esc>:call CompileRun()<CR>
 vmap <F5> <Esc>:call CompileRun()<CR>
 
+" Edit delay
+set updatetime=100
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -395,6 +398,9 @@ let g:airline_powerline_fonts = 1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 map <leader>n :NERDTreeToggle<cr>
 map <leader>f :NERDTreeFind<cr>
+
+" argwrap
+nnoremap <leader>w :ArgWrap<cr>
 
 
 
