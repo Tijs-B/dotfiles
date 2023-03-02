@@ -391,3 +391,10 @@ let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 let g:airline_powerline_fonts = 1
 
+" NERDTree
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+map <leader>n :NERDTreeToggle<cr>
+map <leader>f :NERDTreeFind<cr>
+
+
+
