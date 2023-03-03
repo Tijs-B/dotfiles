@@ -3,6 +3,9 @@ autoload -Uz compinit && compinit -i
 zstyle ':completion:*' menu select=4
 zmodload zsh/complist
 
+# Make shift-tab navigate completions in reverse
+bindkey -M menuselect '^[[Z' reverse-menu-complete
+
 # Use vim style navigation keys in menu completion
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
