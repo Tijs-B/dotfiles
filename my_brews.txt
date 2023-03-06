@@ -1,0 +1,13 @@
+fd
+fzf
+httpie
+jq
+ncdu
+nmap
+ripgrep
+tealdeer
+tmux
+vim
+tree
+flux
+keka
