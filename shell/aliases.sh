@@ -26,3 +26,6 @@ alias gd='git diff'
 alias ga='git add --all'
 alias v='vim'
 
+# Misc
+alias tldr='tldr --language en'
+
