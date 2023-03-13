@@ -21,6 +21,8 @@
 
     ~/.gitignore_global:
     ~/.gitconfig:
+    
+    ~/.hushlogin:
 
 
 - shell:
