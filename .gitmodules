@@ -41,3 +41,6 @@
 [submodule "vim/pack/vendor/start/vim-argwrap"]
 	path = vim/pack/vendor/start/vim-argwrap
 	url = https://github.com/FooSoft/vim-argwrap
+[submodule "zsh/plugins/zsh-vi-mode"]
+	path = zsh/plugins/zsh-vi-mode
+	url = https://github.com/jeffreytse/zsh-vi-mode.git
