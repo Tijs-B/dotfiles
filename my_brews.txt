@@ -11,3 +11,5 @@ vim
 tree
 flux
 keka
+trash
+
