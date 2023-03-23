@@ -44,3 +44,6 @@
 [submodule "zsh/plugins/zsh-vi-mode"]
 	path = zsh/plugins/zsh-vi-mode
 	url = https://github.com/jeffreytse/zsh-vi-mode.git
+[submodule "vim/pack/vendor/start/goyo.vim"]
+	path = vim/pack/vendor/start/goyo.vim
+	url = https://github.com/junegunn/goyo.vim.git
