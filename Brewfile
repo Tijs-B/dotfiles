@@ -8,6 +8,7 @@ brew "ripgrep"
 brew "tealdeer"
 brew "tree"
 brew "trash"
+brew "wget"
 
 # helpful command-line applications
 brew "nmap"
