@@ -47,3 +47,9 @@
 [submodule "vim/pack/vendor/start/goyo.vim"]
 	path = vim/pack/vendor/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
+[submodule "vim/pack/vendor/start/YouCompleteMe"]
+	path = vim/pack/vendor/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "vim/pack/vendor/start/nerdcommenter"]
+	path = vim/pack/vendor/start/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter.git

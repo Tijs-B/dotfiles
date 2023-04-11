@@ -397,8 +397,19 @@ let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 map <leader>n :NERDTreeToggle<cr>
 map <leader>f :NERDTreeFind<cr>
 
+" NERDCommenter
+let g:NERDCreateDefaultMappings = 1
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+let g:NERDToggleCheckAllLines = 1
+
 " argwrap
 nnoremap <leader>a :ArgWrap<cr>
+
+" YouCompleteMe
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 
 

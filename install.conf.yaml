@@ -31,3 +31,4 @@
     vim/pack/vendor/start
     vim/pack/themes/opt,
     Cleaning submodules]
+  - [vim "+helptags ALL" +qall, Updating vim helptags]
