@@ -11,9 +11,6 @@
 [submodule "zsh/plugins/zsh-completions"]
 	path = zsh/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
-[submodule "zsh/plugins/zsh-syntax-highlighting"]
-	path = zsh/plugins/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "zsh/plugins/zsh-autosuggestions"]
 	path = zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
@@ -53,3 +50,6 @@
 [submodule "vim/pack/vendor/start/nerdcommenter"]
 	path = vim/pack/vendor/start/nerdcommenter
 	url = https://github.com/preservim/nerdcommenter.git
+[submodule "zsh/plugins/fast-syntax-highlighting"]
+	path = zsh/plugins/fast-syntax-highlighting
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting.git

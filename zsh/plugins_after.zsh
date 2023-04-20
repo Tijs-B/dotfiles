@@ -1,5 +1,5 @@
 # Syntax highlighting
-source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # zsh autosuggestions
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
