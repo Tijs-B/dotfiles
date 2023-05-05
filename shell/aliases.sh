@@ -19,6 +19,7 @@ alias dcd='docker compose down'
 alias dcl='docker compose logs -f'
 alias dcp='docker compose pull'
 alias dcr='docker compose restart'
+alias dcb='docker compose build'
 
 # Common commands
 alias gs='git status'
