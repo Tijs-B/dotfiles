@@ -28,6 +28,9 @@ source ~/.zsh/prompt.zsh
 # Aliases
 source ~/.shell/aliases.sh
 
+# External
+source ~/.shell/external.sh
+
 # Plugins after
 source ~/.zsh/plugins_after.zsh
 
