@@ -5,6 +5,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Allow local customizations in the ~/.shell_local file
+if [ -f ~/.shell_local ]; then
+    source ~/.shell_local
+fi
+
 # Functions
 source ~/.shell/functions.sh
 
