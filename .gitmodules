@@ -29,9 +29,6 @@
 [submodule "vim/pack/vendor/start/vim-airline-themes"]
 	path = vim/pack/vendor/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
-[submodule "vim/pack/themes/opt/vim-solarized8"]
-	path = vim/pack/themes/opt/vim-solarized8
-	url = https://github.com/lifepillar/vim-solarized8.git
 [submodule "vim/pack/vendor/start/rust.vim"]
 	path = vim/pack/vendor/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim

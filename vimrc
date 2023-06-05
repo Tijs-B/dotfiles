@@ -379,10 +379,10 @@ endfunction
 " => Plugin configuration
 """"""""""""""""""""""""""""""""
 
-" Solarized
+" Selenized
 set termguicolors
+colorscheme selenized
 set background=dark
-colorscheme solarized8_flat
 highlight LineNr guifg=#3F4F54 guibg=NONE gui=NONE cterm=NONE
 highlight CursorLineNr guifg=#586e75 guibg=NONE gui=bold cterm=bold
 
