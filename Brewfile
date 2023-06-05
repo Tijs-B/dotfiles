@@ -3,16 +3,18 @@ brew "fd"
 brew "fzf"
 brew "httpie"
 brew "jq"
-brew "ncdu"
 brew "ripgrep"
 brew "tealdeer"
 brew "tree"
 brew "trash"
 brew "wget"
+brew "bat"
+brew "difftastic"
 
 # helpful command-line applications
 brew "nmap"
 brew "vim"
+brew "glances"
 
 # productivity applications
 cask "flux" if OS.mac?
