@@ -50,3 +50,12 @@
 [submodule "zsh/plugins/fast-syntax-highlighting"]
 	path = zsh/plugins/fast-syntax-highlighting
 	url = https://github.com/zdharma-continuum/fast-syntax-highlighting.git
+[submodule "vim/pack/vendor/start/vim-jsx-pretty"]
+	path = vim/pack/vendor/start/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule "vim/pack/vendor/start/vim-javascript"]
+	path = vim/pack/vendor/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/pack/vendor/start/typescript-vim"]
+	path = vim/pack/vendor/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
