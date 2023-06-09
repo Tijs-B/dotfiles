@@ -11,6 +11,8 @@ brew "wget"
 brew "bat"
 brew "difftastic"
 
+brew "iproute2mac" if OS.mac?
+
 # helpful command-line applications
 brew "nmap"
 brew "vim"

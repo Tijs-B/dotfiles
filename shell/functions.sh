@@ -12,3 +12,7 @@ path_prepend() {
     PATH="$1${PATH:+":$PATH"}"
 }
 
+source ~/.shell/fzf.sh
+
+
+
