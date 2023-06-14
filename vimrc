@@ -381,10 +381,16 @@ endfunction
 
 " Selenized
 set termguicolors
-colorscheme selenized
 set background=dark
-highlight LineNr guifg=#3F4F54 guibg=NONE gui=NONE cterm=NONE
-highlight CursorLineNr guifg=#586e75 guibg=NONE gui=bold cterm=bold
+
+function! s:patch_selenized_line_nr()
+    highlight LineNr guifg=#3F4F54 guibg=NONE gui=NONE cterm=NONE
+    highlight CursorLineNr guifg=#586e75 guibg=NONE gui=bold cterm=bold
+endfunction
+
+autocmd! ColorScheme selenized call s:patch_selenized_line_nr()
+colorscheme selenized
+
 
 " Airline
 let g:airline_theme='solarized'
