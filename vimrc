@@ -417,5 +417,11 @@ nnoremap <leader>a :ArgWrap<cr>
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
-
+" ALE
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\}
+let g:ale_fix_on_save = 1
+let g:ale_linters_explicit = 1
 
