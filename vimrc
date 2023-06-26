@@ -419,9 +419,15 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " ALE
 let g:ale_fixers = {
-\   'javascript': ['prettier'],
+\   'javascript': ['prettier', 'eslint'],
+\   'javascriptreact': ['prettier', 'eslint'],
 \   'css': ['prettier'],
 \}
 let g:ale_fix_on_save = 1
 let g:ale_linters_explicit = 1
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'javascriptreact': ['eslint'],
+\}
 
