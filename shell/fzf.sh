@@ -19,7 +19,7 @@ fe() {
 }
 
 # fd - cd to selected directory
-fd() {
+fcd() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
@@ -27,7 +27,7 @@ fd() {
 }
 
 # fda - including hidden directories
-fda() {
+fcda() {
   local dir
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
 }
