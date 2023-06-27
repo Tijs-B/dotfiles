@@ -35,4 +35,6 @@ alias pinstall='source ./venv/bin/activate && pip3 install -r requirements.txt'
 
 # Misc
 alias tldr='tldr --language en'
+alias lzd='lazydocker'
+
 
