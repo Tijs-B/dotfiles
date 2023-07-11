@@ -8,10 +8,6 @@
 - link:
     ~/.tmux.conf:
 
-    ~/.vim:
-    ~/.vimrc:
-    ~/.ideavimrc:
-
     ~/.shell:
 
     ~/.zsh:
@@ -24,12 +20,12 @@
     ~/.gitconfig:
     
     ~/.hushlogin:
+    
+    ~/.config/bat: bat
 
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [git clean -fdx
-    vim/pack/vendor/start
-    vim/pack/themes/opt,
+    zsh/plugins/,
     Cleaning submodules]
-  - [vim "+helptags ALL" +qall, Updating vim helptags]

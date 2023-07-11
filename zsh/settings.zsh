@@ -35,8 +35,8 @@ setopt HIST_IGNORE_SPACE
 # Time to wait for additional characters in a sequence
 KEYTIMEOUT=1 # corresponds to 10ms
 
-# Use vim as the editor
-export EDITOR=vim
+# Use nvim as the editor
+export EDITOR=nvim
 
 # Use vim style line editing in zsh
 bindkey -v

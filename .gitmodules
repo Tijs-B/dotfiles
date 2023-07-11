@@ -5,69 +5,12 @@
 [submodule "powerlevel10k"]
 	path = zsh/plugins/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
-[submodule "vim/pack/vendor/start/vim-fugitive"]
-	path = vim/pack/vendor/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "zsh/plugins/zsh-completions"]
 	path = zsh/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
 [submodule "zsh/plugins/zsh-autosuggestions"]
 	path = zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
-[submodule "vim/pack/vendor/start/vim-surround"]
-	path = vim/pack/vendor/start/vim-surround
-	url = https://github.com/tpope/vim-surround
-[submodule "vim/pack/vendor/start/nerdtree"]
-	path = vim/pack/vendor/start/nerdtree
-	url = https://github.com/preservim/nerdtree.git
-[submodule "vim/pack/vendor/start/syntastic"]
-	path = vim/pack/vendor/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
-[submodule "vim/pack/vendor/start/vim-airline"]
-	path = vim/pack/vendor/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "vim/pack/vendor/start/vim-airline-themes"]
-	path = vim/pack/vendor/start/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes.git
-[submodule "vim/pack/vendor/start/rust.vim"]
-	path = vim/pack/vendor/start/rust.vim
-	url = https://github.com/rust-lang/rust.vim
-[submodule "vim/pack/vendor/start/vim-argwrap"]
-	path = vim/pack/vendor/start/vim-argwrap
-	url = https://github.com/FooSoft/vim-argwrap
 [submodule "zsh/plugins/zsh-vi-mode"]
 	path = zsh/plugins/zsh-vi-mode
 	url = https://github.com/jeffreytse/zsh-vi-mode.git
-[submodule "vim/pack/vendor/start/goyo.vim"]
-	path = vim/pack/vendor/start/goyo.vim
-	url = https://github.com/junegunn/goyo.vim.git
-[submodule "vim/pack/vendor/start/YouCompleteMe"]
-	path = vim/pack/vendor/start/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe.git
-[submodule "vim/pack/vendor/start/nerdcommenter"]
-	path = vim/pack/vendor/start/nerdcommenter
-	url = https://github.com/preservim/nerdcommenter.git
-[submodule "zsh/plugins/fast-syntax-highlighting"]
-	path = zsh/plugins/fast-syntax-highlighting
-	url = https://github.com/zdharma-continuum/fast-syntax-highlighting.git
-[submodule "vim/pack/vendor/start/vim-jsx-pretty"]
-	path = vim/pack/vendor/start/vim-jsx-pretty
-	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
-[submodule "vim/pack/vendor/start/vim-javascript"]
-	path = vim/pack/vendor/start/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
-[submodule "vim/pack/vendor/start/typescript-vim"]
-	path = vim/pack/vendor/start/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
-[submodule "vim/pack/vendor/start/fzf"]
-	path = vim/pack/vendor/start/fzf
-	url = https://github.com/junegunn/fzf.git
-[submodule "vim/pack/vendor/start/fzf.vim"]
-	path = vim/pack/vendor/start/fzf.vim
-	url = https://github.com/junegunn/fzf.vim.git
-[submodule "vim/pack/vendor/start/auto-pairs"]
-	path = vim/pack/vendor/start/auto-pairs
-	url = https://github.com/jiangmiao/auto-pairs.git
-[submodule "vim/pack/vendor/start/ale"]
-	path = vim/pack/vendor/start/ale
-	url = https://github.com/dense-analysis/ale.git
