@@ -3,30 +3,29 @@
       relink: true
       create: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.tmux.conf:
 
     ~/.shell:
 
-    ~/.zsh:
     ~/.zshrc:
 
-    ~/.bash:
     ~/.bashrc:
 
     ~/.gitignore_global:
     ~/.gitconfig:
-    
+
     ~/.hushlogin:
-    
+
     ~/.config/bat: bat
     ~/.config/nvim: nvim
 
-
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - [git clean -fdx
-    zsh/plugins/,
-    Cleaning submodules]
+    - [git submodule update --init --recursive, Installing submodules]
+    - [
+        git clean -fdx
+        zsh/plugins/,
+        Cleaning submodules,
+      ]
