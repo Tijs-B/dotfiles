@@ -26,6 +26,6 @@
     - [git submodule update --init --recursive, Installing submodules]
     - [
         git clean -fdx
-        zsh/plugins/,
+        zsh/plugins/ firefox/chrome/,
         Cleaning submodules,
       ]
