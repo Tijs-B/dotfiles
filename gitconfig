@@ -9,6 +9,8 @@
     ff = merge --ff-only
     fa = fetch --all
     pullrb = pull --rebase
+    dft = difftool
+    dlog = "!f() { GIT_EXTERNAL_DIFF=difft git log -p --ext-diff $@; }; f"
 
 [color]
     ui = auto
@@ -20,7 +22,16 @@
     path = ~/.gitconfig_local
 
 [diff]
-    external = difft
+    tool = difftastic
+
+[difftool]
+    prompt = false
+
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+    difftool = true
 
 [filter "lfs"]
 	process = git-lfs filter-process
