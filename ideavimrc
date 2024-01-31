@@ -1,1 +1,18 @@
-source ~/.vimrc
+" General
+let mapleader = " "
+nnoremap <SPACE> <Nop>
+set ideajoin
+set ideastatusicon=gray
+
+" Plugins
+Plug 'tpope/vim-commentary'
+
+" Some nice shortcuts
+map <leader>R <Action>(Run)
+map <leader>D <Action>(Debug)
+map <leader>r <Action>(RenameElement)
+map <S-Space> <Action>(GotoNextError)
+
+" Buffer navigation
+map L <Action>(NextTab)
+map H <Action>(PreviousTab)

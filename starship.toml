@@ -1,0 +1,19 @@
+[kubernetes]
+disabled = false
+detect_files = ['k8s']
+
+[[kubernetes.contexts]]
+context_pattern = '.*IRE-G-EKS-DEV-1'
+style = 'blue'
+context_alias = 'eks-dev'
+
+[[kubernetes.contexts]]
+context_pattern = '.*IRE-G-EKS-STAGING-1'
+style = 'green'
+context_alias = 'eks-acc'
+
+[[kubernetes.contexts]]
+context_pattern = '.*IRE-G-EKS-PROD-1'
+style = 'red'
+context_alias = 'eks-prd'
+symbol = '⚠️  '
