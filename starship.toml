@@ -1,6 +1,9 @@
+[docker_context]
+disabled = true
+
 [kubernetes]
 disabled = false
-detect_files = ['k8s']
+detect_folders = ['k8s']
 
 [[kubernetes.contexts]]
 context_pattern = '.*IRE-G-EKS-DEV-1'
@@ -17,3 +20,9 @@ context_pattern = '.*IRE-G-EKS-PROD-1'
 style = 'red'
 context_alias = 'eks-prd'
 symbol = '⚠️  '
+
+[package]
+disabled = true
+
+[rust]
+disabled = true
