@@ -1,43 +1,70 @@
 [alias]
-    st = status -sb
-    br = branch -vv
-    aa = add --all :/
-    ci = commit -v
-    ca = commit --amend -v
-    co = checkout
-    dh = diff HEAD~
-    ff = merge --ff-only
-    fa = fetch --all
-    pullrb = pull --rebase
-    dft = difftool
-    dlog = "!f() { GIT_EXTERNAL_DIFF=difft git log -p --ext-diff $@; }; f"
+  st = status -sb
+  br = branch -vv
+  aa = add --all :/
+  ci = commit -v
+  ca = commit --amend -v
+  co = checkout
+  dh = diff HEAD~
+  ff = merge --ff-only
+  fa = fetch --all
+  pullrb = pull --rebase
+  dft = difftool
+  dlog = "!f() { GIT_EXTERNAL_DIFF=difft git log -p --ext-diff $@; }; f"
+  lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all -n 15
 
 [color]
-    ui = auto
+  ui = auto
+
+[commit]
+  verbose = true
 
 [core]
-    excludesFile = ~/.gitignore_global
+  excludesFile = ~/.gitignore_global
+  pager = delta
 
-[include]
-    path = ~/.gitconfig_local
+[delta]
+  light = false
 
 [diff]
-    tool = difftastic
+  algorithm = histogram
+  colorMoved = default
+  tool = difftastic
 
 [difftool]
-    prompt = false
+  prompt = false
 
 [difftool "difftastic"]
-    cmd = difft "$LOCAL" "$REMOTE"
-
-[pager]
-    difftool = true
-
-[push]
-    autoSetupRemote = true
+  cmd = difft "$LOCAL" "$REMOTE"
 
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+
+[include]
+  path = ~/.gitconfig_local
+
+[interactive]
+  diffFilter = delta --color-only
+
+[merge]
+  conflictstyle = zdiff3
+
+[pager]
+  difftool = true
+
+[pull]
+  rebase = true
+
+[push]
+  autoSetupRemote = true
+
+[rebase]
+  autosquash = true
+  autostash = true
+
+[rerere]
+  enabled = true
+

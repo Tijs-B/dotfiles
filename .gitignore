@@ -1,4 +1,6 @@
 vim/undo
 vim/.netrwhist
 Brewfile.lock.json
+nvim/lazy-lock.json
+nvim/lazyvim.json
 
