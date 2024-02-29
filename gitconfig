@@ -21,10 +21,6 @@
 
 [core]
   excludesFile = ~/.gitignore_global
-  pager = delta
-
-[delta]
-  light = false
 
 [diff]
   algorithm = histogram
@@ -45,9 +41,6 @@
 
 [include]
   path = ~/.gitconfig_local
-
-[interactive]
-  diffFilter = delta --color-only
 
 [merge]
   conflictstyle = zdiff3
