@@ -33,6 +33,9 @@
 [difftool "difftastic"]
   cmd = difft "$LOCAL" "$REMOTE"
 
+[fetch]
+  prune = true
+
 [filter "lfs"]
   process = git-lfs filter-process
   required = true
