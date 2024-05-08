@@ -15,7 +15,6 @@ set smartcase
 " Idea specific settings
 set ideajoin
 set ideastatusicon=gray
-set idearefactormode=keep
 
 " Plugins
 set surround
@@ -77,7 +76,21 @@ nmap <leader>sw <Action>(SurroundWith)
 nmap <leader>sd <Action>(SafeDelete)
 nmap <leader>oi <Action>(OptimizeImports)
 
-" Goto navigation
+" []
+nmap [b <Action>(PreviousTab)
+nmap ]b <Action>(NextTab)
+nmap [g <Action>(GotoPreviousError)
+nmap ]g <Action>(GotoNextError)
+nmap [u <Action>(GotoPrevElementUnderCaretUsage)
+nmap ]u <Action>(GotoNextElementUnderCaretUsage)
+nmap [o <Action>(PreviousOccurence)
+nmap ]o <Action>(NextOccurence)
+nmap [m <Action>(MethodUp)
+nmap ]m <Action>(MethodDown)
+nmap [c <Action>(JumpToLastChange)
+nmap ]c <Action>(JumpToNextChange)
+
+" goto
 nmap <leader>a <Action>(GotoAction)
 nmap ga <Action>(GotoAction)
 nmap gc <Action>(GotoClass)
