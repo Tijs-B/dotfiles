@@ -5,6 +5,8 @@ let mapleader = " "
 nnoremap <SPACE> <Nop>
 set history=1000
 set showmode
+set visualbell
+set noerrorbells
 
 " Search and replace
 set incsearch
@@ -20,6 +22,7 @@ set ideastatusicon=gray
 set surround
 set commentary
 set highlightedyank
+set NERDTree
 
 " Plugin configuration
 let g:highlightedyank_highlight_duration = "1000"
@@ -107,3 +110,5 @@ nmap gn <Action>(ShowNavBar)
 
 " other navigation
 map <S-Space> <Action>(GotoNextError)
+nmap <leader>n :NERDTree<CR>
+nmap <leader>e :NERDTree<CR>
