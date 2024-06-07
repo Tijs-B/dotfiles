@@ -55,7 +55,7 @@ nmap <leader>fc <Action>(ReformatCode)
 " nmap <leader>ic <Action>(InspectCode)
 " nmap <leader>so <Action>(SelectAllOccurrences)
 " nmap <leader>gc <Action>(Generate)
-nmap <leader>gt <Action>(GoToTest)
+" nmap <leader>gt <Action>(GoToTest)
 
 " run
 nmap <leader>rc <Action>(ContextRun)
