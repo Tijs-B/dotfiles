@@ -51,8 +51,6 @@ config.window_padding = {
 config.window_frame = {
 	active_titlebar_bg = bg_inactive,
 }
-config.window_background_opacity = 0.9
-config.macos_window_background_blur = 30
 
 config.enable_scroll_bar = true
 
