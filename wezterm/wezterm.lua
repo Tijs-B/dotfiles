@@ -68,16 +68,9 @@ config.scrollback_lines = 20000000
 -- Keys
 config.keys = {
 	-- Option + left/right moves a word left or right
-	{
-		key = "LeftArrow",
-		mods = "OPT",
-		action = wezterm.action.SendString("\x1bb"),
-	},
-	{
-		key = "RightArrow",
-		mods = "OPT",
-		action = wezterm.action.SendString("\x1bf"),
-	},
+	{ key = "LeftArrow", mods = "OPT", action = wezterm.action.SendString("\x1bb") },
+	{ key = "RightArrow", mods = "OPT", action = wezterm.action.SendString("\x1bf") },
+	{ key = "t", mods = "SUPER", action = wezterm.action.SpawnCommandInNewTab({ cwd = wezterm.home_dir }) },
 }
 
 return config
