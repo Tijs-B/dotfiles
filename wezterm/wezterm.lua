@@ -1,13 +1,13 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-local color_scheme = "OneDark (base16)"
+local color_scheme = "OneDark (Gogh)"
 local onedark = wezterm.color.get_builtin_schemes()[color_scheme]
 
 local bg_active = onedark.background
 local fg_active = onedark.foreground
-local bg_inactive = "#1d2026"
-local fg_inactive = "#717680"
+local bg_inactive = "#15191F"
+local fg_inactive = "#3c414a"
 
 config.color_scheme = color_scheme
 config.font = wezterm.font({ family = "MesloLGLDZ Nerd Font Mono" })
@@ -45,6 +45,7 @@ config.window_padding = {
 config.window_frame = {
 	active_titlebar_bg = bg_inactive,
 }
+config.enable_scroll_bar = true
 
 config.freetype_load_flags = "NO_HINTING"
 
