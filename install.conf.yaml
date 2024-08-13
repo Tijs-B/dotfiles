@@ -24,6 +24,7 @@
     ~/.config/bat: bat
     ~/.config/nvim: nvim
     ~/.config/starship.toml: starship.toml
+    ~/.config/wezterm: wezterm
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
