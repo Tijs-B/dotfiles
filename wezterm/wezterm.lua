@@ -2,15 +2,12 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- Colors --
-local color_scheme = "OneDark (Gogh)"
-local onedark = wezterm.color.get_builtin_schemes()[color_scheme]
-
-local bg_active = onedark.background
-local fg_active = "#80899b" -- Original foreground: #5c6370
+local bg_active = "#21252b"
+local fg_active = "#abb2bf"
 local bg_inactive = "#15191F"
 local fg_inactive = "#3c414a"
 
-config.color_scheme = color_scheme
+config.color_scheme = "OneDark (Gogh)"
 config.colors = {
 	tab_bar = {
 		background = bg_active,
@@ -36,16 +33,15 @@ config.colors = {
 }
 
 -- Visuals --
-config.font = wezterm.font({ family = "MesloLGLDZ Nerd Font Mono" })
+config.font = wezterm.font({ family = "JetBrains Mono", weight = "Medium" })
 config.font_size = 12
-config.harfbuzz_features = { "calt=1", "clig=1", "liga=1" }
 config.freetype_load_flags = "NO_HINTING"
 
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.window_padding = {
 	left = 5,
 	right = 5,
-	top = 0,
+	top = 5,
 	bottom = 0,
 }
 config.window_frame = {
