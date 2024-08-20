@@ -1,3 +1,5 @@
+# vi: ft=gitconfig
+
 [alias]
   dft = difftool
   dfts = difftool --staged
