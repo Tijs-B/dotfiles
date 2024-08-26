@@ -1,4 +1,5 @@
 local wezterm = require("wezterm")
+local projects = require("projects")
 local config = wezterm.config_builder()
 
 -- Colors --
@@ -60,11 +61,14 @@ config.use_resize_increments = true
 config.scrollback_lines = 20000000
 
 -- Keys
+config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
 config.keys = {
 	-- Option + left/right moves a word left or right
 	{ key = "LeftArrow", mods = "OPT", action = wezterm.action.SendString("\x1bb") },
 	{ key = "RightArrow", mods = "OPT", action = wezterm.action.SendString("\x1bf") },
 	{ key = "t", mods = "SUPER", action = wezterm.action.SpawnCommandInNewTab({ cwd = wezterm.home_dir }) },
+	{ key = "p", mods = "LEADER", action = projects.choose_project() },
+	{ key = "f", mods = "LEADER", action = wezterm.action.ShowLauncherArgs({ flags = "FUZZY|WORKSPACES" }) },
 }
 
 return config
