@@ -98,7 +98,7 @@ disabled = true
 [kubernetes]
 disabled = false
 detect_folders = ['k8s']
-format = 'on [$symbol$context( \($namespace\))]($style)'
+format = 'on [$symbol$context( \($namespace\))]($style) '
 
 [[kubernetes.contexts]]
 context_pattern = '.*IRE-G-EKS-DEV-1'
