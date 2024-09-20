@@ -119,7 +119,7 @@ context_alias = 'eks-prd'
 disabled = true
 
 [python]
-disabled = true
+format = '(in [${symbol}($virtualenv)]($style))'
 
 [rust]
 disabled = true
