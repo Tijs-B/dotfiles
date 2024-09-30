@@ -1,5 +1,8 @@
 # vi: ft=gitconfig
 
+[absorb]
+  maxStack = 50
+
 [alias]
   dft = difftool
   dfts = difftool --staged
