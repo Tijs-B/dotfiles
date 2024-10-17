@@ -31,6 +31,7 @@ config.colors = {
 	},
 	-- Orignal foreground: #5c6370
 	foreground = fg_active,
+	scrollbar_thumb = "#30353d",
 }
 
 -- Visuals --
@@ -41,7 +42,7 @@ config.freetype_load_flags = "NO_HINTING"
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.window_padding = {
 	left = 5,
-	right = 5,
+	right = 8,
 	top = 5,
 	bottom = 0,
 }
