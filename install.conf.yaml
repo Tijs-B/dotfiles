@@ -19,17 +19,14 @@
     ~/.gitignore_global:
     ~/.gitconfig:
 
-    ~/.hushlogin:
-
     ~/.config/bat: bat
     ~/.config/nvim: nvim
     ~/.config/starship.toml: starship.toml
     ~/.config/wezterm: wezterm
 
+- create:
+    - ~/.hushlogin
+
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [
-        git clean -fdx
-        zsh/plugins/ firefox/chrome/,
-        Cleaning submodules,
-      ]
+    - [git clean -fdx firefox/chrome/, Cleaning submodules]
