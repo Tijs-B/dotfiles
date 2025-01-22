@@ -28,11 +28,6 @@ alias gd='git diff'
 alias ga='git add --all'
 alias v='vim'
 
-# Venv commands
-alias venv='rm -rf ./venv && python3 -m venv venv && source ./venv/bin/activate'
-alias vact='source ./venv/bin/activate'
-alias pinstall='source ./venv/bin/activate && pip3 install -r requirements.txt'
-
 # Misc
 alias tldr='tldr --language en'
 alias lzd='lazydocker'
