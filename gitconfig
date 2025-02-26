@@ -21,8 +21,16 @@
   fzap = "!git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 git add -p"
   # gone: remove branches that are gone on the remote
   gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
+  # poco: solve poetry.lock merge conflicts
+  poco = "!git restore --staged --worktree poetry.lock && poetry lock --no-update && git add poetry.lock"
+
+[branch]
+  sort = -committerdate
 
 [color]
+  ui = auto
+
+[column]
   ui = auto
 
 [commit]
@@ -30,10 +38,13 @@
 
 [core]
   excludesFile = ~/.gitignore_global
+  fsmonitor = true
+  untrackedCache = true
 
 [diff]
   algorithm = histogram
-  colorMoved = default
+  colorMoved = plain
+  renames = true
   tool = difftastic
 
 [difftool]
@@ -43,7 +54,9 @@
   cmd = difft "$LOCAL" "$REMOTE"
 
 [fetch]
+  all = true
   prune = true
+  pruneTags = true
 
 [filter "lfs"]
   process = git-lfs filter-process
@@ -51,8 +64,14 @@
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
 
+[help]
+  autocorrect = prompt
+
 [include]
   path = ~/.gitconfig_local
+
+[init]
+  defaultBranch = main
 
 [merge]
   conflictstyle = zdiff3
@@ -65,11 +84,17 @@
 
 [push]
   autoSetupRemote = true
+  followTags = true
 
 [rebase]
   autosquash = true
   autostash = true
+  updateRefs = true
 
 [rerere]
   enabled = true
+  autoupdate = true
+
+[tag]
+  sort = version:refname
 
