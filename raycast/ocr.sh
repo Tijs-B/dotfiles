@@ -4,7 +4,7 @@
 # Download: https://github.com/schappim/macOCR
 
 # @raycast.schemaVersion 1
-# @raycast.title macOCR
+# @raycast.title ocr
 # @raycast.mode silent
 # @raycast.author Lim Chee Aun
 # @raycast.authorURL https://github.com/cheeaun
@@ -13,3 +13,4 @@
 # @raycast.icon 📸
 
 ocr
+
