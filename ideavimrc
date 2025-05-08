@@ -113,3 +113,4 @@ nmap gn <Action>(ShowNavBar)
 map <S-Space> <Action>(GotoNextError)
 nmap <leader>n :NERDTree<CR>
 nmap <leader>e :NERDTree<CR>
+nnoremap <silent> <Esc> <Esc>:noh<CR>
