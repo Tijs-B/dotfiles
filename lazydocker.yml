@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://json.schemastore.org/lazydocker.json
+
+gui:
+  returnImmediately: true
+
+logs:
+  timestamps: true

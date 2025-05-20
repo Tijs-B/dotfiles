@@ -24,6 +24,8 @@
     ~/.config/starship.toml: starship.toml
     ~/.config/wezterm: wezterm
 
+    "~/Library/Application Support/lazydocker/config.yml": lazydocker.yml
+
 - create:
     - ~/.hushlogin
 
