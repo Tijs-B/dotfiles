@@ -4,10 +4,14 @@
   maxStack = 50
 
 [alias]
+  # lazy aliases
+  s = status
+  pf = push --force-with-lease
+  rom = rebase origin/master -i
+
   # difftastic aliases
   dft = difftool
   dfts = difftool --staged
-  dlog = -c diff.external=difft log --ext-diff
   dshow = -c diff.external=difft show --ext-diff
   ddiff = -c diff.external=difft diff
   dl = -c diff.external=difft log -p --ext-diff
@@ -32,7 +36,7 @@
   # gone: remove branches that are gone on the remote
   gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
   # poco: solve poetry.lock merge conflicts
-  poco = "!git restore --staged --worktree poetry.lock && poetry lock --no-update && git add poetry.lock"
+  poco = "!git restore --staged --worktree poetry.lock && poetry lock && git add poetry.lock"
   # head: show current head commit
   head = "rev-parse HEAD"
 
