@@ -23,6 +23,7 @@
     ~/.config/nvim: nvim
     ~/.config/starship.toml: starship.toml
     ~/.config/wezterm: wezterm
+    ~/.config/atuin/config.toml: atuin_config.toml
 
     "~/Library/Application Support/lazydocker/config.yml": lazydocker.yml
 
