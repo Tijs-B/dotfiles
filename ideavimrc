@@ -17,6 +17,7 @@ set ignorecase
 set smartcase
 
 " Idea specific settings
+set ideamark
 set ideajoin
 set ideastatusicon=gray
 
@@ -60,10 +61,10 @@ nmap <leader>fc <Action>(ReformatCode)
 " nmap <leader>gt <Action>(GoToTest)
 
 " run
-nmap <leader>rc <Action>(ContextRun)
-nmap <leader>rx<Action>(chooseRunConfiguration)
+nmap <leader>rc <Action>(RunContextGroup)
+nmap <leader>rx <Action>(ChooseRunConfiguration)
 nmap <leader>rr <Action>(Rerun)
-nmap <leader>rt <Action>(RunTests)
+nmap <leader>rt <Action>(RerunTests)
 nmap <leader>rs <Action>(Stop)
 
 " debug
@@ -80,6 +81,10 @@ nmap <leader>uw <Action>(Unwrap)
 nmap <leader>sw <Action>(SurroundWith)
 nmap <leader>sd <Action>(SafeDelete)
 nmap <leader>oi <Action>(OptimizeImports)
+
+" telescope-like
+nmap <leader><leader> <action>(com.mituuz.fuzzier.Fuzzier)
+nmap <leader>/ <action>(com.mituuz.fuzzier.FuzzyGrep)
 
 " []
 nmap [b <Action>(PreviousTab)
