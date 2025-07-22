@@ -97,6 +97,9 @@ $character"""
 [docker_context]
 disabled = true
 
+[git_metrics]
+disabled = false
+
 [kubernetes]
 disabled = false
 detect_folders = ['k8s']
