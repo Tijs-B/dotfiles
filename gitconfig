@@ -54,7 +54,7 @@
 
 [core]
   excludesFile = ~/.gitignore_global
-  fsmonitor = true
+  # fsmonitor = true
   untrackedCache = true
 
 [diff]
