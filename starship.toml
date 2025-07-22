@@ -78,6 +78,7 @@ $azure\
 $nats\
 $direnv\
 $env_var\
+$mise\
 $crystal\
 $custom\
 $sudo\
@@ -89,6 +90,7 @@ $time\
 $status\
 $os\
 $container\
+$netns\
 $shell\
 $character"""
 
