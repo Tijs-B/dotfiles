@@ -54,8 +54,6 @@
 
 [core]
   excludesFile = ~/.gitignore_global
-  # fsmonitor = true
-  untrackedCache = true
 
 [diff]
   algorithm = histogram
