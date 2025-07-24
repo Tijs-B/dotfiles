@@ -15,6 +15,8 @@ $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
+$jujutsu_commit\
+$jujutsu_diff\
 $hg_branch\
 $pijul_channel\
 $docker_context\
@@ -99,6 +101,12 @@ disabled = true
 
 [git_metrics]
 disabled = false
+
+[jujutsu_commit]
+format = 'on [󰠬 ](bright-purple)\[(bold bright-purple)[$prefix]($style_prefix) [$operation](bold blue)( ["$description"]($style_description))( [$conflicted]($style_conflicted))([$empty]($style_empty))\] '
+style_description = 'bold'
+conflicted_string = '(conflict)'
+description_empty = ''
 
 [kubernetes]
 disabled = false

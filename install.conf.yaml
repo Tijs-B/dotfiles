@@ -24,6 +24,7 @@
     ~/.config/starship.toml: starship.toml
     ~/.config/wezterm: wezterm
     ~/.config/atuin/config.toml: atuin_config.toml
+    ~/.config/jj: jj
 
     "~/Library/Application Support/lazydocker/config.yml": lazydocker.yml
 
