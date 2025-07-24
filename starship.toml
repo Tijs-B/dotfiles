@@ -107,6 +107,7 @@ format = 'on [󰠬 ](bright-purple)\[(bold bright-purple)[$prefix]($style_prefix
 style_description = 'bold'
 conflicted_string = '(conflict)'
 description_empty = ''
+description_length = 16
 
 [kubernetes]
 disabled = false
