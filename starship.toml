@@ -103,7 +103,7 @@ disabled = true
 disabled = false
 
 [jujutsu_commit]
-format = 'on [󰠬 ](bright-purple)\[(bold bright-purple)[$prefix]($style_prefix) [$operation](bold blue)( ["$description"]($style_description))( [$conflicted]($style_conflicted))([$empty]($style_empty))\] '
+format = 'on [󰠬 ](bright-purple)\[(bold bright-purple)[$prefix]($style_prefix) [$operation](bold blue)( ["$description"]($style_description))( [$conflicted]($style_conflicted))( [$empty]($style_empty))\] '
 style_description = 'bold'
 conflicted_string = '(conflict)'
 description_empty = ''
