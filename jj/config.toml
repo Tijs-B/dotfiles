@@ -6,15 +6,12 @@ email = "14929648+Tijs-B@users.noreply.github.com"
 
 [ui]
 default-command = "log"
-diff-editor = "pycharm"
-merge-editor = "pycharm"
+# diff-editor = "pycharm"
+# merge-editor = "pycharm"
 diff-formatter = "difft"
 
 [template-aliases]
 'format_short_signature(signature)' = 'signature.name()'
-
-[merge-tools.meld]
-edit-args = ["--newtab", "$left", "$right"]
 
 [merge-tools.pycharm]
 program = "/Applications/PyCharm.app/Contents/MacOS/pycharm"
