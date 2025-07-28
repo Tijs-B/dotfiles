@@ -6,8 +6,6 @@ email = "14929648+Tijs-B@users.noreply.github.com"
 
 [ui]
 default-command = "log"
-# diff-editor = "pycharm"
-# merge-editor = "pycharm"
 diff-formatter = "difft"
 
 [template-aliases]
@@ -21,3 +19,31 @@ diff-args = ["diff", "$left", "$right"]
 
 [merge-tools.difft]
 diff-args = ["--color=always", "$left", "$right"]
+
+[git]
+auto-local-bookmark = true
+
+################## Local settings ##########################
+[[--scope]]
+--when.repositories = ["~/code"]
+
+[--scope.fix.tools.1-ruff-format]
+command = ["poetry", "run", "ruff", "format", "--stdin-filename", "$path", "-"]
+patterns = ["glob:'**/*.py'"]
+
+[--scope.fix.tools.2-ruff-check]
+command = [
+  "poetry",
+  "run",
+  "ruff",
+  "check",
+  "--fix",
+  "--stdin-filename",
+  "$path",
+  "-",
+]
+patterns = ["glob:'**/*.py'"]
+
+[--scope.fix.tools.3-ruff-format]
+command = ["poetry", "run", "ruff", "format", "--stdin-filename", "$path", "-"]
+patterns = ["glob:'**/*.py'"]
