@@ -19,7 +19,7 @@ diff-args = ["diff", "$left", "$right"]
 diff-args = ["--color=always", "$left", "$right"]
 
 [git]
-private-commits = "description(glob:'private:$')"
+private-commits = "description(glob:'private:*') | description(glob:'wip:*')"
 
 ################## Visual settings #########################
 
