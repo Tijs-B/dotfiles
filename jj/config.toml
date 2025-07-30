@@ -21,6 +21,10 @@ diff-args = ["--color=always", "$left", "$right"]
 [git]
 private-commits = "description(glob:'private:*') | description(glob:'wip:*')"
 
+[aliases]
+e = ["edit"]
+s = ["squash"]
+
 ################## Visual settings #########################
 
 [template-aliases]
