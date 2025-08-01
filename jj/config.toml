@@ -16,7 +16,7 @@ merge-args = ["merge", "$right", "$left", "$base", "$output"]
 diff-args = ["diff", "$left", "$right"]
 
 [merge-tools.difft]
-diff-args = ["--color=always", "$left", "$right"]
+diff-args = ["--color=always", "--sort-paths", "$left", "$right"]
 
 [git]
 private-commits = "description(glob:'private:*') | description(glob:'wip:*')"
