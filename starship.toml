@@ -130,6 +130,9 @@ context_pattern = '.*IRE-G-EKS-PROD-1'
 style = 'red'
 context_alias = 'eks-prd'
 
+[lua]
+disabled = true
+
 [package]
 disabled = true
 
