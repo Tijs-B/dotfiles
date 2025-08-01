@@ -14,7 +14,7 @@
 
     ~/.bashrc:
 
-    ~/.ideavimrc:
+    ~/.ideavimrc: helix.vim/helix.idea.vim
 
     ~/.gitignore_global:
     ~/.gitconfig:
