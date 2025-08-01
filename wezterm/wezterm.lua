@@ -3,35 +3,38 @@ local projects = require("projects")
 local config = wezterm.config_builder()
 
 -- Colors --
-local bg_active = "#21252b"
-local fg_active = "#abb2bf"
-local bg_inactive = "#15191F"
-local fg_inactive = "#3c414a"
+local flexoki_colors = {
+  bg_superdark = "#060606",
+  bg = "#100F0F",
+  bg_2 = "#1C1B1A",
+  tx = "#CECDC3",
+  tx_3 = "#575653",
+  ui = "#282726",
+  ui_2 = "#343331",
+}
 
-config.color_scheme = "OneDark (Gogh)"
+config.color_scheme = "flexoki-dark"
 config.colors = {
+	background = flexoki_colors.bg,
 	tab_bar = {
-		background = bg_active,
 		active_tab = {
-			bg_color = bg_active,
-			fg_color = fg_active,
+			bg_color = flexoki_colors.ui,
+			fg_color = flexoki_colors.tx,
 		},
 		inactive_tab = {
-			bg_color = bg_inactive,
-			fg_color = fg_inactive,
+			bg_color = flexoki_colors.bg,
+			fg_color = flexoki_colors.tx_3,
 		},
 		new_tab = {
-			bg_color = bg_inactive,
-			fg_color = fg_inactive,
+			bg_color = flexoki_colors.bg,
+			fg_color = flexoki_colors.tx_3,
 		},
 		new_tab_hover = {
-			bg_color = bg_active,
-			fg_color = fg_active,
+			bg_color = flexoki_colors.tx,
+			fg_color = flexoki_colors.bg,
 		},
 	},
-	-- Orignal foreground: #5c6370
-	foreground = fg_active,
-	scrollbar_thumb = "#30353d",
+	scrollbar_thumb = flexoki_colors.ui_2,
 }
 
 -- Visuals --
@@ -42,12 +45,12 @@ config.freetype_load_flags = "NO_HINTING"
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.window_padding = {
 	left = 5,
-	right = 8,
+	right = 10,
 	top = 5,
 	bottom = 0,
 }
 config.window_frame = {
-	active_titlebar_bg = bg_inactive,
+	active_titlebar_bg = flexoki_colors.bg,
 }
 
 config.enable_scroll_bar = true

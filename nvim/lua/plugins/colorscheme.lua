@@ -1,16 +1,13 @@
 return {
   {
-    "navarasu/onedark.nvim",
-    opts = {
-      style = "darker",
-      transparent = true,
-    },
+    "kepano/flexoki-neovim",
+    name = "flexoki",
   },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "flexoki",
     },
   },
 }
