@@ -1,5 +1,6 @@
 local wezterm = require("wezterm")
 local projects = require("projects")
+local open_in_editor = require("open_in_editor")
 local open_in_jira = require("open_in_jira")
 local config = wezterm.config_builder()
 
@@ -85,5 +86,6 @@ config.keys = {
 
 -- Plugins
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
+merge_arrays(config.hyperlink_rules, open_in_editor.hyperlink_rules)
 merge_arrays(config.hyperlink_rules, open_in_jira.hyperlink_rules)
 return config
