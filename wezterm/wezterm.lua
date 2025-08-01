@@ -1,6 +1,14 @@
 local wezterm = require("wezterm")
 local projects = require("projects")
+local open_in_jira = require("open_in_jira")
 local config = wezterm.config_builder()
+
+-- Utils --
+local function merge_arrays(target, source)
+	for _, entry in ipairs(source) do
+		table.insert(target, entry)
+	end
+end
 
 -- Colors --
 local flexoki_colors = {
@@ -75,4 +83,7 @@ config.keys = {
 	{ key = "f", mods = "LEADER", action = wezterm.action.ShowLauncherArgs({ flags = "FUZZY|WORKSPACES" }) },
 }
 
+-- Plugins
+config.hyperlink_rules = wezterm.default_hyperlink_rules()
+merge_arrays(config.hyperlink_rules, open_in_jira.hyperlink_rules)
 return config
