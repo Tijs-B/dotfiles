@@ -23,11 +23,13 @@ private-commits = "description(glob:'private:*') | description(glob:'wip:*')"
 
 [revset-aliases]
 'closest_bookmark(to)' = 'heads(::to & bookmarks())'
+'closest_pushable(to)' = 'heads(::to & ~description(exact:"") & (~empty() | merges()))'
 
 [aliases]
 e = ["edit"]
 s = ["squash"]
-tug = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@-"]
+# Frm: https://github.com/jj-vcs/jj/discussions/5568#discussioncomment-12674748
+tug = ["bookmark", "move", "--from", "closest_bookmark(@)", "--to", "closest_pushable(@)"]
 
 ################## Visual settings #########################
 
