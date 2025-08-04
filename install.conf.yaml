@@ -26,6 +26,7 @@
     ~/.config/atuin/config.toml: atuin_config.toml
     ~/.config/jj: jj
     ~/.config/helix: helix
+    ~/.config/direnv: direnv
 
     "~/Library/Application Support/lazydocker/config.yml": lazydocker.yml
 
