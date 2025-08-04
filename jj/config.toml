@@ -21,9 +21,13 @@ diff-args = ["--color=always", "--sort-paths", "$left", "$right"]
 [git]
 private-commits = "description(glob:'private:*') | description(glob:'wip:*')"
 
+[revset-aliases]
+'closest_bookmark(to)' = 'heads(::to & bookmarks())'
+
 [aliases]
 e = ["edit"]
 s = ["squash"]
+tug = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@-"]
 
 ################## Visual settings #########################
 
